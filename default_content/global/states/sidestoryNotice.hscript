@@ -156,4 +156,7 @@ function leaveScene(){
     var state = new HScriptState("sidestoryMenu");
         MusicBeatState.switchState(state);
 }
-
+function onStateCreatePost(){
+    addTouchPad("LEFT_FULL", "A_B");
+    addTouchPadCamera();
+end
